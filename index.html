@@ -1,0 +1,98 @@
+<html>
+	<head>
+	<title>Nutrición</title>
+	</head>
+	<body bgcolor="#FFFFFF">
+		
+		<img src="img/redes.jpg" width=100%><br>
+        <img src="img/Logo.jpg" width=100%> 
+		<br>
+		<font color="#FFE4C4" size=5> <b>Servicios </b></font>
+        <font color="grey">
+        <ul>
+            <li>Control de peso</li>
+            <li>Prevención y tratamiento de enfermedades crónicas</li>
+        </ul>
+		<br>
+        Todas nuestras consultas incluyen análisis de composición corporal InBody, evaluación clínica nutricional, plan de alimentación individualizado, lista de productos recomendados, recomendaciones generales (ejercicio, estilo de vida, suplementación en caso necesario) y asesoría via Whatsapp.
+        <br>
+        *Todos nuestros paquetes tienen una vigencia de 6 meses a partir de la primera consulta
+        </font><br><br><br>
+
+		<form id="form"> 
+		<table  width="100%">
+		  <tr bgcolor="#FFE4C4"  align="center">
+                <td ><font size="4" color="FFFFFF"><b>Consulta online o presencial</b></font></td>
+                <td ><font size="4" color="FFFFFF"><b>Otros Servicios</b></font></td>
+                <td ><font size="4" color="FFFFFF"><b>Preparación</b></font></td>       
+          </tr>    
+          <tr>
+            <td>
+		        <input type="radio" name="consulta" value="consulta1"><font color="grey">Primera Consulta $850 MXN<br>
+				<input type="radio" name="consulta" value="seguimiento">Seguimiento  $700 MXN<br>
+				<input type="radio" name="consulta" value="paqs3">Paquete de 3 Consultas  $2,000 MXN<br>
+				<input type="radio" name="consulta" value="parejas">Paquete  pareja  $5,000 MXN<br>
+                </font>
+            </td>
+            <td>
+              
+			  <select id="tiposConsulta" name="tiposConsulta">
+				<option value="1"><font color="grey">Análisis de Composición corporal Sin consulta +  $200</font></option>
+				<option value="2"><font color="grey">Análisis de Composición corporal con consulta +  $1000</font></option>
+			  </select>
+                
+			</td>
+			<td>
+			   <font color="grey">
+		        <input type="checkbox" name="receta" value="receta">Recetas $1,000<br>
+				<input type="checkbox" name="ejercicio" value="ejercicio">Ejercicios  $1,000<br>
+				<input type="checkbox" name="revista" value="revista">Revista semanal $150<br>
+                </font>
+			</td>
+		</tr>	
+      </table>
+      <table>
+		<tr align="center">
+          <img src="img/direccion.jpg" width=100%>   
+        </tr>
+      </table>
+      <table  width="70%" align="center">
+          <tr bgcolor="#FFE4C4"  align="center">
+              <th><font color ="white" size="3">AGENDA TU CITA</font><br></th>
+              <th bgcolor="#FFE4C4"><font size="3" color="white" >TIPO DE PAGO</font><br></th>
+              <th bgcolor="#FFE4C4"><font size="3"color="white">REQUIERE FACTURA?(si o no) </font><br></th>
+          </tr>
+          <tr>
+            <td>
+				Nombre<input type="text" size="25"><br>
+			    Domicilio<input type="text" size="25"><br>
+		   </td>
+           <td>
+			  <select id="tipoPago" name="tipoPago">
+				<option value="3">Efectivo  +0%</option>
+				<option value="4">Tarjeta de Credito o Debito +6%</option>
+				<option value="5">Transferencia Electronica + 3%</option>
+			   </select>
+			</td>	  
+            <td>
+			   <input type="text" name="FAC" size="15"> 
+			</td>
+          </tr>			
+		</table>	
+        <hr color="black">
+
+
+        <label for="total">
+        <div class="total" id="total" name="total">
+        Total: $0.00</div>
+      </label>
+
+      <button type="button" class="submit-btn" onclick="calcular()" id="total">Calcular Total</button>
+
+	   </form>
+       
+
+           <script src="script.js"></script>
+           <link rel="stylesheet" href="style.css">
+	</body>
+</html>
